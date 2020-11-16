@@ -52,8 +52,6 @@ class PhoneController extends BaseEntityController
         $this->phoneCache = $phoneCache;
     }
 
-    //todo: add bad request
-
     /**
      * List all phones.
      *

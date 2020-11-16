@@ -59,7 +59,7 @@ class ClientControllerTest extends AbstractWebTestCase
             "password": "ClientBilemo0"
             }'
         );
-        self::assertEquals(500, $response->getStatusCode());
+        self::assertEquals(400, $response->getStatusCode());
     }
 
     public function testCreateClientWithMissingData()
@@ -118,7 +118,7 @@ class ClientControllerTest extends AbstractWebTestCase
             "password": "ClientBilemo0"
             }'
         );
-        self::assertEquals(500, $response->getStatusCode());
+        self::assertEquals(400, $response->getStatusCode());
     }
 
     public function testUpdateClientNotAdmin()

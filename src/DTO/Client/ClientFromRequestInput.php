@@ -10,7 +10,6 @@ use App\Validator\Constraints as AcmeAssert;
 abstract class ClientFromRequestInput
 {
     /**
-     * @var string
      * @Assert\NotNull()
      * @AcmeAssert\IsUnique()
      * @Assert\NotBlank(message="Client must have a username")
@@ -20,7 +19,6 @@ abstract class ClientFromRequestInput
     public $username;
 
     /**
-     * @var string
      * @Assert\NotNull()
      * @AcmeAssert\IsUnique()
      * @Assert\NotBlank(message="Client must have a username")
@@ -30,7 +28,6 @@ abstract class ClientFromRequestInput
     public $name;
 
     /**
-     * @var string
      * @AcmeAssert\IsUnique()
      * @Assert\NotNull()
      * @Assert\Email(message="mail not valid")
@@ -39,7 +36,6 @@ abstract class ClientFromRequestInput
     public $mail;
 
     /**
-     * @var string
      * @AcmeAssert\IsUnique()
      * @Assert\NotNull()
      * @Assert\Type(type="string", message="Phone number has to be string type")
@@ -49,7 +45,6 @@ abstract class ClientFromRequestInput
     public $phoneNumber;
 
     /**
-     * @var string
      * @Assert\NotNull()
      * @Assert\NotBlank(message="Client must have a password")
      * @Assert\Type(type="string")

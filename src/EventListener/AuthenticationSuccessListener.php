@@ -4,8 +4,6 @@ namespace App\EventListener;
 
 use App\Entity\Client;
 use Lexik\Bundle\JWTAuthenticationBundle\Event\AuthenticationSuccessEvent;
-use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\Serializer;
 
 class AuthenticationSuccessListener
 {

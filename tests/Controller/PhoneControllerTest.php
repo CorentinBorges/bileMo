@@ -134,7 +134,7 @@ class PhoneControllerTest extends AbstractWebTestCase
               "description": "The best phone" 
             }'
         );
-        self::assertEquals(500, $response->getStatusCode());
+        self::assertEquals(400, $response->getStatusCode());
     }
 
     public function testCreatePhoneWithoutBrand()
