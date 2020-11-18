@@ -46,7 +46,6 @@ class PhoneCache
         $element = $this->cache->getItem($itemName);
 
 
-
         if (!$element->isHit()) {
             $listPhone = PhoneHandler::build($request, $this->phoneRepository);
             $dataToSet = $this->serializer->serialize($listPhone, 'json', ['groups' => 'list_phone']);

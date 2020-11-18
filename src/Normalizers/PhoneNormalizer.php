@@ -27,7 +27,6 @@ class PhoneNormalizer implements ContextAwareNormalizerInterface
     public function normalize($phone, string $format = null, array $context = [])
     {
         $data = $this->normalizer->normalize($phone, $format, $context);
-
         if (in_array('list_phone', $context)) {
             $data['_link']['self'] = $this->router->generate('detail_phone', [
                 'id' => $phone->getId(),
