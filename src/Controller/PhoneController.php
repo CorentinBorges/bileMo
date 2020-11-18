@@ -93,14 +93,14 @@ class PhoneController extends BaseEntityController
      *
      * @OA\Parameter(
      *     name="brand",
-     *     in="query",
+     *     in="path",
      *     description="Search phones of one brand only",
      *     @OA\Schema(type="string")
      * )
      *
      * @OA\Parameter(
      *     name="model",
-     *     in="query",
+     *     in="path",
      *     description="Find a phone by model's name",
      *     @OA\Schema(type="string")
      * )
