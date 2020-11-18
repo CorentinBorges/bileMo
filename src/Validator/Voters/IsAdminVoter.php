@@ -1,11 +1,8 @@
 <?php
 
-
 namespace App\Validator\Voters;
 
-
 use App\Entity\Client;
-use App\Entity\User;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 
