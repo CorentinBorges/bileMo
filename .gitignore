@@ -1,4 +1,4 @@
-
+/.phpcs-cache
 ###> symfony/framework-bundle ###
 /.idea
 /.env.local
