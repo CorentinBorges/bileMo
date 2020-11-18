@@ -199,8 +199,13 @@ class PhoneController extends BaseEntityController
      */
     public function detailOnePhone(Phone $phone)
     {
+        if ($this->security->isGranted('admin_client')) {
+            $itemName = 'one_phone_json' . $phone->getId() . 'admin';
+        } else {
+            $itemName = 'one_phone_json' . $phone->getId();
+        }
         $phoneJson = $this->phoneCache->detailPhoneCache(
-            'one_phone_json' . $phone->getId(),
+            $itemName,
             3600,
             $phone
         );
