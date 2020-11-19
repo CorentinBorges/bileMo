@@ -26,7 +26,7 @@ The BileMo API to have the best phone catalogue
 
 3.  Configure your database in [.env](.env) 
     ```
-    DATABASE_URL= mysql://username:password@host:port/dbName?serverVersion=5.7
+    DATABASE_URL= mysql://username:password@host:port/dbName?serverVersion=phpVersion
     ```
     
 4.  Create the database and export fixtures (pass for all clients: 'ClientBilemo0', pass Admin:'AdminBilemo0' )
